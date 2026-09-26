@@ -222,7 +222,8 @@ export default function App() {
               <span className="italic text-gold-bright">lo estés.</span>
             </h2>
             <a
-              href="#"
+              href="https://pub-3785727cccb74c2785c27af2d1575e69.r2.dev/SennaSetup.exe"
+              download
               className="inline-flex items-center gap-3 px-10 py-5 rounded-full border border-gold/40 text-gold-bright font-mono text-sm tracking-widest uppercase hover:bg-gold/10 transition-all duration-300"
             >
               Descargar para Windows
