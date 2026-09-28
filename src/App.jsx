@@ -2,6 +2,7 @@
 import Scene from './scenes/Scene';
 import Header from './components/Header';
 import SkillsGrid from './components/SkillsGrid';
+import CombosSection from './components/CombosSection';
 import AgentDiagram from './components/AgentDiagram';
 import Footer from './components/Footer';
 import NebulaBackground from './components/NebulaBackground';
@@ -130,13 +131,15 @@ export default function App() {
           data-noise="1.8"
           className="min-h-screen flex items-center"
         >
-          <div className="max-w-[600px] px-12 ml-[5vw]">
+          <div className="max-w-[900px] px-12 ml-[5vw]">
             <p className="font-mono text-xs text-gold tracking-[0.2em] uppercase mb-6">
               Bienvenido a la nueva era
             </p>
-            <h2 data-reveal className="font-display text-5xl md:text-6xl leading-tight mb-8">
-              No es una app. <br />
-              <span className="italic text-gold-bright">Es Senna.</span>
+            <h2 data-reveal className="font-display text-5xl md:text-6xl leading-tight">
+              No es una app.
+            </h2>
+            <h2 className="font-display text-5xl md:text-6xl leading-tight italic text-gold-bright mb-8">
+              Es Senna.
             </h2>
             <p className="text-lg text-text-dim leading-relaxed">
               Un asistente personal que vive en tu computadora. Sin suscripciones,
@@ -162,6 +165,23 @@ export default function App() {
           className="min-h-screen flex items-center py-32"
         >
           <SkillsGrid />
+        </section>
+
+        <section
+          id="combos"
+          data-orb-state
+          data-scale="1.8"
+          data-x="0"
+          data-y="0"
+          data-energy="0.4"
+          data-color="#c9a668"
+          data-wire="0.08"
+          data-glow="0.06"
+          data-shape="0.7"
+          data-noise="2.0"
+          className="min-h-screen flex items-center py-32"
+        >
+          <CombosSection />
         </section>
 
         <StatsBlock />
