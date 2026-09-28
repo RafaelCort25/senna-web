@@ -1,35 +1,44 @@
-﻿# Dependencies
+﻿# Dependencias
 node_modules/
 
 # Build
 dist/
 dist-ssr/
+*.local
 
 # Logs
 *.log
 npm-debug.log*
-
-# Environment
-.env
-.env.local
-.env.*.local
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Editor
 .vscode/*
 !.vscode/extensions.json
 .idea/
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# OS
-.DS_Store
-Thumbs.db
+# Cloudflare Wrangler (cache local, tokens, R2 buckets)
+.wrangler/
+wrangler.toml.bak
 
-# Senna
-*.bak
-_patch*.py
-_fix*.py
-_mk*.py
+# Archivos grandes (nunca subir)
+*.zip
+*.exe
+*.dmg
+*.pkg
+*.msi
+*.iso
+*.tar.gz
+
+# Environment
+.env
+.env.*
+!.env.example

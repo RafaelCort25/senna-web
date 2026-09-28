@@ -1,16 +1,87 @@
-# React + Vite
+﻿# Senna - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page oficial de **Senna**, el asistente personal con IA 100% local para Windows.
 
-Currently, two official plugins are available:
+## Descripcion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Landing page inmersiva construida con React + Vite + Tailwind CSS, con:
+- Fondo espacial animado (Nebula)
+- Cursor personalizado
+- Animaciones scroll-based
+- Grid de skills interactivo
+- Diagrama de agentes multiagente
+- Contenido legal en modal
 
-## React Compiler
+## Estructura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    src/
+    |-- components/         # Componentes React reutilizables
+    |   |-- AgentDiagram.jsx      # Diagrama de multiagente
+    |   |-- Constellation.jsx     # Fondo de constelaciones
+    |   |-- CustomCursor.jsx      # Cursor personalizado
+    |   |-- DarkSide.jsx          # Seccion oscura
+    |   |-- Footer.jsx            # Pie de pagina
+    |   |-- GlowShell.jsx         # Efecto glow
+    |   |-- Header.jsx            # Cabecera
+    |   |-- LegalModal.jsx        # Modal con terminos y privacidad
+    |   |-- LoadingScreen.jsx     # Pantalla de carga
+    |   |-- Marquee.jsx           # Texto en movimiento
+    |   |-- NebulaBackground.jsx  # Fondo de nebulosa
+    |   |-- Orb.jsx               # Orbe animado
+    |   |-- OrbitParticles.jsx    # Particulas orbitando
+    |   |-- ScrollUI.jsx          # UI de scroll
+    |   |-- SkillsGrid.jsx        # Grid de skills
+    |   |-- StatsBlock.jsx        # Bloque de estadisticas
+    |   |-- WireShell.jsx         # Estructura visual
+    |-- data/
+    |   |-- legalContent.js       # Contenido de terminos/privacidad
+    |-- App.jsx               # Root
+    |-- main.jsx              # Entry point
+    |-- index.css             # Estilos globales
 
-## Expanding the ESLint configuration
+## Desarrollo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    # Instalar dependencias
+    npm install
+
+    # Arrancar servidor de desarrollo (http://localhost:5173)
+    npm run dev
+
+    # Build de produccion
+    npm run build
+
+    # Preview del build
+    npm run preview
+
+    # Lint
+    npm run lint
+
+## Deploy
+
+Desplegado en **Cloudflare Pages** via Wrangler.
+
+    # Deploy manual
+    npm run build
+    npx wrangler pages deploy dist
+
+## Datos del proyecto (Senna)
+
+- **38 skills** operativas con **338 acciones** totales
+- **Multiagente** profesional (Supervisor + DEV / RESEARCH / EXECUTE / CHAT)
+- **100% local** - Ollama + ChromaDB (sin nube)
+- **Windows 10/11** (64 bits)
+
+## Descarga
+
+El boton de descarga apunta al instalador en:
+    https://[tu-r2-bucket].r2.cloudflarestorage.com/SennaSetup.exe
+
+## Enlaces
+
+- **Backend (repo)**: https://github.com/RafaelCort25/jarvis-asistente
+- **GUI (repo)**: https://github.com/RafaelCort25/jarvis-electron
+- **Landing (este repo)**: https://github.com/RafaelCort25/senna-web
+
+## Licencia
+
+Uso personal. Ver seccion legal de la landing.

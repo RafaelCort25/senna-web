@@ -42,37 +42,57 @@ function SkillCard({ skill }) {
 }
 
 const SKILLS = [
+  // Fundamentales
   { icon: '⌘', name: 'Sistema', desc: 'Control total de tu PC' },
+  { icon: '⬤', name: 'Escritorio', desc: 'Apps y volumen' },
+  { icon: '◑', name: 'Navegador', desc: 'Búsquedas web' },
   { icon: '◈', name: 'Archivos', desc: 'Búsqueda y gestión' },
-  { icon: '⬢', name: 'Dev', desc: 'Código y refactor' },
-  { icon: '◐', name: 'CAD/BIM', desc: 'DWG → IFC' },
-  { icon: '✦', name: 'Gmail', desc: 'Correo inteligente' },
-  { icon: '◉', name: 'Canva', desc: 'Diseño gráfico' },
-  { icon: '⋈', name: 'n8n', desc: '12k+ workflows' },
-  { icon: '◧', name: 'Vision', desc: 'Análisis de pantalla' },
-  { icon: '❋', name: 'Telegram', desc: 'Notificaciones' },
-  { icon: '⬟', name: 'Blender', desc: 'Render 3D' },
-  { icon: '◈', name: 'FreeCAD', desc: 'Modelado técnico' },
-  { icon: '⬢', name: 'Docs', desc: 'RAG local' },
+  { icon: '⌗', name: 'Portapapeles', desc: 'Copiar y pegar' },
   { icon: '⌬', name: 'Terminal', desc: 'Comandos seguros' },
-  { icon: '◬', name: 'Git', desc: 'Control de versiones' },
-  { icon: '⊞', name: 'Office', desc: 'Word · Excel · PPT' },
-  { icon: '⊕', name: 'Spotify', desc: 'Control de música' },
-  { icon: '◒', name: 'Notas', desc: 'Productividad' },
-  { icon: '◓', name: 'Programador', desc: 'Tareas programadas' },
-  { icon: '⌖', name: 'Clima', desc: 'OpenWeather' },
   { icon: '⌦', name: 'Traducción', desc: '9 idiomas' },
+
+  // Productividad
+  { icon: '⊞', name: 'Office', desc: 'Word · Excel · PPT' },
+  { icon: '⧉', name: 'Editar', desc: 'Modificar archivos' },
+  { icon: '◆', name: 'PDF', desc: 'Conversión y edición' },
+  { icon: '⬢', name: 'Docs RAG', desc: 'Pregunta a tus PDFs' },
+  { icon: '✦', name: 'Gmail', desc: 'Correo inteligente' },
+  { icon: '◓', name: 'Calendario', desc: 'Eventos + .ics' },
+  { icon: '◆', name: 'Notion', desc: 'Páginas y notas' },
+  { icon: '⋈', name: 'n8n', desc: 'Automatizaciones' },
+  { icon: '◒', name: 'Notas', desc: 'Productividad' },
+  { icon: '⚠', name: 'Tareas', desc: 'Programadas' },
+
+  // Dev
+  { icon: '⬢', name: 'Dev', desc: 'Código y refactor' },
+  { icon: '◬', name: 'Git', desc: 'Control de versiones' },
+  { icon: '◧', name: 'Vision', desc: 'OCR y análisis' },
+
+  // Multimedia
+  { icon: '◈', name: 'Imagen', desc: 'Generación IA' },
+  { icon: '❋', name: 'Audio', desc: 'Transcripción' },
+  { icon: '▶', name: 'Video', desc: 'Editar y exportar' },
+  { icon: '✧', name: 'Retoque', desc: 'Upscaling 4x' },
+  { icon: '⬡', name: 'Educación', desc: 'PSeInt · diagramas' },
+
+  // CAD y 3D
+  { icon: '◐', name: 'CAD/BIM', desc: 'DWG → IFC' },
+  { icon: '◈', name: 'FreeCAD', desc: 'Modelado técnico' },
+  { icon: '⬟', name: 'Blender', desc: 'Render 3D' },
+  { icon: '⋄', name: 'Maps', desc: 'Edificios reales' },
+
+  // Integraciones
+  { icon: '⊕', name: 'Spotify', desc: 'Control de música' },
+  { icon: '◉', name: 'Canva', desc: 'Diseño gráfico' },
+  { icon: '❋', name: 'Telegram', desc: 'Notificaciones' },
+
+  // Entretenimiento
+  { icon: '◕', name: 'Entretenimiento', desc: 'Multimedia' },
+  { icon: '✦', name: 'Frases', desc: 'Citas curadas' },
+  { icon: '☺', name: 'Chistes', desc: 'Humor local' },
+  { icon: '⌖', name: 'Clima', desc: 'OpenWeather' },
   { icon: '⚠', name: 'Alarmas', desc: 'Recordatorios' },
   { icon: '⌗', name: 'Macro', desc: 'Grabar secuencias' },
-  { icon: '⧉', name: 'Editar', desc: 'Modificar archivos' },
-  { icon: '◆', name: 'PDF', desc: 'Conversión y lectura' },
-  { icon: '◈', name: 'Imagen', desc: 'Generación visual' },
-  { icon: '⬡', name: 'Educación', desc: 'PSeInt · diagramas' },
-  { icon: '◕', name: 'Entretenimiento', desc: 'Multimedia' },
-  { icon: '⋄', name: 'Maps', desc: 'Edificios reales' },
-  { icon: '◔', name: 'Docs RAG', desc: 'Pregunta a tus PDFs' },
-  { icon: '◑', name: 'Navegador', desc: 'Búsquedas web' },
-  { icon: '⬤', name: 'Escritorio', desc: 'Apps y volumen' },
 ];
 
 export default function SkillsGrid() {

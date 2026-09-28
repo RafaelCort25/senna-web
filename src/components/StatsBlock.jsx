@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
-  { value: 31, suffix: '', label: 'Skills nativas' },
+  { value: 38, suffix: '', label: 'Skills nativas' },
   { value: 4, suffix: '', label: 'Agentes IA' },
   { value: 0, suffix: '', label: 'Suscripciones' },
   { value: 100, suffix: '%', label: 'Local' },
@@ -70,3 +70,4 @@ export default function StatsBlock() {
     </div>
   );
 }
+
