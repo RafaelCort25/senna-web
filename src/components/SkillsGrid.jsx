@@ -100,7 +100,7 @@ export default function SkillsGrid() {
     <div className="w-full max-w-[1400px] mx-auto px-8">
       <div className="text-center mb-16">
         <p className="font-mono text-xs text-gold tracking-[0.3em] uppercase mb-4">
-          31 skills nativas
+          38 skills nativas
         </p>
         <h2 data-reveal className="font-display text-6xl md:text-7xl leading-tight mb-4">
           Todo integrado.
@@ -118,3 +118,4 @@ export default function SkillsGrid() {
     </div>
   );
 }
+
