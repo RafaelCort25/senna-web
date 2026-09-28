@@ -242,12 +242,11 @@ export default function App() {
               <span className="italic text-gold-bright">lo estés.</span>
             </h2>
             <a
-              href="https://pub-3785727cccb74c2785c27af2d1575e69.r2.dev/SennaSetup.exe"
-              download
+              href="https://github.com/RafaelCort25/jarvis-electron/releases/download/v1.2.0/Senna-Setup-1.2.0.exe"
               className="inline-flex items-center gap-3 px-10 py-5 rounded-full border border-gold/40 text-gold-bright font-mono text-sm tracking-widest uppercase hover:bg-gold/10 transition-all duration-300"
             >
               Descargar para Windows
-              <span className="text-xs opacity-60">v1.0 · 1.4 GB</span>
+              <span className="text-xs opacity-60">v1.2.0 · 78 MB</span>
             </a>
             <p className="mt-8 font-mono text-xs text-text-dim">
               Windows 10/11 · 8 GB RAM mínimo · Ollama
