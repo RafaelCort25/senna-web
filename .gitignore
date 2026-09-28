@@ -42,3 +42,7 @@ wrangler.toml.bak
 .env
 .env.*
 !.env.example
+
+*.bak
+*.bak-*
+
