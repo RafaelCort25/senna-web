@@ -95,13 +95,13 @@ function ComboCard({ combo }) {
 
 export default function CombosSection() {
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-8">
+    <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8">
       {/* Header */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-8 md:mb-16">
         <p className="font-mono text-xs text-gold tracking-[0.3em] uppercase mb-4">
           Combos que potencian Senna
         </p>
-        <h2 className="font-display text-6xl md:text-7xl leading-tight mb-4">
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-4">
           El poder está en
           <br />
           <span className="italic text-gold-bright">combinar.</span>
@@ -113,14 +113,14 @@ export default function CombosSection() {
       </div>
 
       {/* Grid de combos */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 md:gap-5">
         {FEATURED_COMBOS.map((combo) => (
           <ComboCard key={combo.id} combo={combo} />
         ))}
       </div>
 
       {/* Hint final */}
-      <div className="mt-12 text-center">
+      <div className="mt-8 md:mt-8 md:mt-12 text-center">
         <p className="font-mono text-xs text-text-dim tracking-wide">
           Y así con las {SKILLS.length} skills. Pídele lo que necesites en lenguaje natural.
         </p>

@@ -33,12 +33,12 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section className="w-full max-w-[1400px] mx-auto px-8">
-      <div className="text-center mb-16">
+    <section className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8">
+      <div className="text-center mb-8 md:mb-16">
         <p className="font-mono text-xs text-gold tracking-[0.3em] uppercase mb-4">
           Cómo funciona
         </p>
-        <h2 className="font-display text-6xl md:text-7xl leading-tight mb-4">
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-4">
           De una frase
           <br />
           <span className="italic text-gold-bright">a la acción.</span>
@@ -49,7 +49,7 @@ export default function HowItWorks() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
         {STEPS.map((step, i) => {
           const Icon = Icons[step.icon] || Icons.Circle;
           return (
@@ -103,7 +103,7 @@ export default function HowItWorks() {
         })}
       </div>
 
-      <div className="mt-14 text-center">
+      <div className="mt-10 md:mt-10 md:mt-14 text-center">
         <p className="font-mono text-xs text-text-dim tracking-wide">
           Sin la nube. Sin telemetría. Sin suscripciones. Tu PC, tus datos, tus reglas.
         </p>

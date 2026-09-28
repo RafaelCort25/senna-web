@@ -39,11 +39,11 @@
 export default function AgentDiagram() {
   return (
     <div className="w-full max-w-[1100px] mx-auto px-8">
-      <div className="text-center mb-16">
+      <div className="text-center mb-8 md:mb-16">
         <p className="font-mono text-xs text-gold tracking-[0.3em] uppercase mb-4">
           Multiagente profesional
         </p>
-        <h2 className="font-display text-6xl md:text-7xl leading-tight mb-4">
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-4">
           4 agentes.<br />
           <span className="italic text-gold-bright">Una sola mente.</span>
         </h2>
@@ -54,7 +54,7 @@ export default function AgentDiagram() {
       </div>
 
       {/* Supervisor arriba */}
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-8 md:mb-12">
         <div
           className="px-8 py-6 rounded-2xl border text-center"
           style={{
@@ -79,12 +79,12 @@ export default function AgentDiagram() {
       </div>
 
       {/* Línea conectora */}
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-8 md:mb-12">
         <div className="w-px h-12 bg-gradient-to-b from-gold/40 to-gold/10" />
       </div>
 
       {/* 4 agentes en grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
         {AGENTS.slice(1).map((agent) => (
           <div
             key={agent.id}

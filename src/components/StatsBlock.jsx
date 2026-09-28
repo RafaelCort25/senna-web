@@ -40,7 +40,7 @@ function StatItem({ value, suffix, label, delay }) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-display text-5xl md:text-6xl lg:text-7xl text-cream leading-none mb-3">
+      <div className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-cream leading-none mb-3">
         {current}
         <span className="text-gold-bright">{suffix}</span>
       </div>
@@ -55,7 +55,7 @@ export default function StatsBlock() {
   return (
     <div className="relative z-20 py-24 px-8">
       <div className="max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {STATS.map((stat, i) => (
             <StatItem
               key={stat.label}

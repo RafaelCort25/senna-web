@@ -23,7 +23,7 @@ export default function Footer() {
     <>
       <footer className="relative z-20 border-t border-gold/10 px-8 py-16">
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-8 md:mb-12">
 
             {/* Brand */}
             <div className="md:col-span-2">
@@ -120,7 +120,7 @@ export default function Footer() {
 
           </div>
 
-          <div className="border-t border-gold/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="border-t border-gold/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
             <p className="font-mono text-xs text-text-dim">
               © 2026 Rafael Cortijo · Todos los derechos reservados
             </p>

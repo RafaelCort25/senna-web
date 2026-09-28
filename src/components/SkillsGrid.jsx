@@ -90,12 +90,12 @@ export default function SkillsGrid() {
   }, []);
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-8">
-      <div className="text-center mb-12">
+    <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8">
+      <div className="text-center mb-8 md:mb-12">
         <p className="font-mono text-xs text-gold tracking-[0.3em] uppercase mb-4">
           {SKILLS.length} skills nativas
         </p>
-        <h2 data-reveal className="font-display text-6xl md:text-7xl leading-tight mb-4">
+        <h2 data-reveal className="font-display text-2xl sm:text-3xl md:text-4xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-4">
           Todo integrado.
         </h2>
         <p className="text-text-dim text-lg max-w-2xl mx-auto">
@@ -126,7 +126,7 @@ export default function SkillsGrid() {
       </div>
 
       {/* Filtros de categoria */}
-      <div className="flex flex-wrap justify-center gap-2 mb-10">
+      <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-6 md:mb-10">
         <button
           onClick={() => setActiveCategory('all')}
           className={`px-4 py-2 rounded-full font-mono text-xs tracking-wide border transition-all ${
@@ -154,7 +154,7 @@ export default function SkillsGrid() {
 
       {/* Grid de skills */}
       {filteredSkills.length > 0 ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3">
           {filteredSkills.map((skill) => (
             <SkillCard key={skill.id} skill={skill} onClick={setSelectedSkill} />
           ))}

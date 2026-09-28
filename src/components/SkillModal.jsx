@@ -62,7 +62,7 @@ export default function SkillModal({ skill, onClose }) {
             <Icons.X className="w-4 h-4" />
           </button>
 
-          <div className="flex items-start gap-5">
+          <div className="flex items-start gap-3 md:gap-4 md:gap-5">
             <div
               className="w-16 h-16 flex items-center justify-center rounded-xl border shrink-0"
               style={{
@@ -80,7 +80,7 @@ export default function SkillModal({ skill, onClose }) {
               >
                 {category?.label || skill.category}
               </div>
-              <h3 className="font-display text-4xl text-cream leading-tight mb-2">
+              <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-cream leading-tight mb-2">
                 {skill.name}
               </h3>
               <p className="text-text-dim text-base">

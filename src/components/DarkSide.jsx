@@ -19,7 +19,7 @@
         </h2>
         <h2
           data-reveal
-          className="font-display italic text-[clamp(3.5rem,10vw,8rem)] leading-[0.9] mb-12"
+          className="font-display italic text-[clamp(3.5rem,10vw,8rem)] leading-[0.9] mb-8 md:mb-12"
           style={{
             color: '#c97a7a',
             textShadow: '0 0 40px rgba(180,80,80,0.4)',
@@ -30,7 +30,7 @@
 
         {/* Descripcion */}
         <p
-          className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-16"
+          className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8 md:mb-16"
           style={{ color: 'rgba(239,233,222,0.55)' }}
         >
           Cuando necesitas respuestas directas. Sin sermones.
@@ -39,7 +39,7 @@
         </p>
 
         {/* Cards de features */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 text-left max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-16 text-left max-w-4xl mx-auto">
 
           <div
             className="p-6 rounded-xl border"
@@ -102,7 +102,7 @@
 
         {/* Modelo destacado */}
         <div
-          className="inline-flex items-center gap-4 px-6 py-3 rounded-full mb-12"
+          className="inline-flex items-center gap-3 md:gap-4 px-6 py-3 rounded-full mb-8 md:mb-12"
           style={{
             border: '1px solid rgba(201,122,122,0.3)',
             background: 'rgba(20,10,10,0.5)',
