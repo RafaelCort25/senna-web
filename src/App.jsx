@@ -3,6 +3,7 @@ import Scene from './scenes/Scene';
 import Header from './components/Header';
 import SkillsGrid from './components/SkillsGrid';
 import CombosSection from './components/CombosSection';
+import HowItWorks from './components/HowItWorks';
 import AgentDiagram from './components/AgentDiagram';
 import Footer from './components/Footer';
 import NebulaBackground from './components/NebulaBackground';
@@ -166,6 +167,25 @@ export default function App() {
         >
           <SkillsGrid />
         </section>
+
+        <section
+
+
+          id="how"
+
+
+          className="min-h-screen flex items-center py-32"
+
+
+        >
+
+
+          <HowItWorks />
+
+
+        </section>
+
+
 
         <section
           id="combos"
