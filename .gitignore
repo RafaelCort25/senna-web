@@ -46,3 +46,7 @@ wrangler.toml.bak
 *.bak
 *.bak-*
 
+
+# Cloudflare Wrangler cache
+.wrangler/
+
